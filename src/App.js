@@ -4,8 +4,8 @@ import tachyons from 'tachyons';
 
 export default function App() {
   const [backgroundColor, setBackgroundColor] = useState(randomColor());
-  const [chosenHeight, setChosenHeight] = useState('100');
-  const [chosenWidth, setChosenWidth] = useState('100');
+  const [chosenHeight, setChosenHeight] = useState('250');
+  const [chosenWidth, setChosenWidth] = useState('250');
 
   return (
     <div className="tc">
