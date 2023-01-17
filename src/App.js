@@ -1,6 +1,7 @@
 import randomColor from 'randomcolor';
 import { useState } from 'react';
-import tachyons from 'tachyons';
+
+// import tachyons from 'tachyons';
 
 export default function App() {
   const [backgroundColor, setBackgroundColor] = useState(randomColor());
@@ -8,11 +9,17 @@ export default function App() {
   const [chosenWidth, setChosenWidth] = useState('250');
 
   return (
-    <div className="tc">
+    <div
+      style={{
+        textAlign: 'center',
+      }}
+    >
       <h1>Random Color Generator</h1>
       <div
-        className="dib"
         style={{
+          borderRadius: '10%',
+          display: 'inline-block',
+          textAlign: 'center',
           border: 'solid 5px black',
           height: `${chosenHeight}px`,
           width: `${chosenWidth}px`,
